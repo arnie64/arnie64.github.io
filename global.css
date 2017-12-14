@@ -1,4 +1,20 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: no-repeat;
+}
+
+header {
+    background-color: rgb(86, 86, 96);
+    margin: 0;
+}
+
 .bg-1 {
     background-color: #574b60;
     color: #ffffff;
+}
+
+.bg-2 {
+   
 }
