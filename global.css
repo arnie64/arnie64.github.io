@@ -18,3 +18,31 @@ header {
 .bg-2 {
    
 }
+
+.test {
+    display: table;
+    margin: 0 auto;
+}
+
+ul#navlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(86, 86, 96);
+}
+
+ul#navlist li {
+    float: left;
+}
+
+ul#navlist li a {
+    display: block;
+    text-align: center;
+}
+
+#particle-js {
+    background-color: #574b60;
+    width: 100vh;
+    height: 100%;
+}
