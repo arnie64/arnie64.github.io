@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>arnie.space</title>
+        <meta charset="utf-8">
 
-<head>
-    <title>arnie</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <!-- JavaScript CDNs -->
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <!-- StyleSheets -->
-    <link rel="stylesheet" href="css/global.css">
-</head>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<body>
-    <div class="wrapper">
+        <!-- Materialise -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <!-- Sidebar -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>arnie</h3>
+        <!-- ParticleJS -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <!-- CSS CDNs -->
+        <!-- Materialise -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+        <!-- Local JavaScript -->
+
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- particles.js container --> 
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+
+        <!-- Home Container -->
+        <div id="home" class="container">
+            <div class="row">
+                <h1 class="center-align">arnie.space</h1>
+                <div class="divider"></div>
+                <div class="row" style="margin-top: 11.5">
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('home', 'about')">about.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('home', 'projects')">projects.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('home', 'blog')">blog.</h6>
+                    </div>
+                </div>
+                <div class="divider"></div>
             </div>
-        </nav>
-
-        <!-- Page Content -->
-        <div id="content">
-
         </div>
 
-    </div>
-</body>
+        <!-- Projects Container -->
+        <div id="projects" class="container">
+            <div class="row">
+                <h1 class="center-align">projects.</h1>
+                <div class="divider"></div>
+                <div class="row" style="margin-top: 11.5">
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('projects', 'about')">about.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('projects', 'home')">home.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('projects', 'blog')">blog.</h6>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
 
+        <!-- About Container -->
+        <div id="about" class="container">
+            <div class="row">
+                <h1 class="center-align">about.</h1>
+                <div class="divider"></div>
+                <div class="row" style="margin-top: 11.5">
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('about', 'projects')">projects.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('about', 'home')">home.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('about', 'blog')">blog.</h6>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- Blog Container -->
+        <div id="blog" class="container">
+            <div class="row">
+                <h1 class="center-align">blog.</h1>
+                <div class="divider"></div>
+                <div class="row" style="margin-top: 11.5">
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('blog', 'projects')">projects.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('blog', 'home')">home.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h6 class="center-align" onClick="fadeInAndOut('blog', 'about')">about.</h6>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </body>
 </html>
