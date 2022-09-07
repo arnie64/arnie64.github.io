@@ -35,25 +35,25 @@ h1, h6 {
 
 #home {
     display: block;
-    position: absolute;
+    position: relative;
     /* margin-left: 25%; */
     padding-top: 20%;
 }
 
 #projects {
     display: none;
-    position: absolute;
+    position: relative;
     /* margin-left: 25%; */
 }
 
 #about {
     display: none;
-    position: absolute;
+    position: relative;
     /* margin-left: 25%; */
 }
 
 #blog {
     display: none;
-    position: absolute;
+    position: relative;
     /* margin-left: 25%; */
 }
