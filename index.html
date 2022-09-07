@@ -3,6 +3,7 @@
     <head>
         <title>arnie.space</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
         <!-- JavaScript CDNs -->
         <!-- Google Font -->
@@ -27,90 +28,97 @@
         <script src="js/helpers.js"></script>
         <!-- Local CSS -->
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/blackhole.js"></script>
     </head>
+
     <body>
         <!-- particles.js container --> 
         <div id="particles-js"></div>
         <script src="js/particles.js"></script>
 
+
         <!-- Home Container -->
-        <div id="home" class="container">
-            <div class="row">
-                <h1 class="center-align">arnie.space</h1>
-                <div class="divider"></div>
-                <div class="row" style="margin-top: 11.5px">
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('home', 'about')">about.</h6>
+        <div class="container">
+            <div id="home" class="container">
+                <div class="row">
+                    <h1 class="center-align">arnie.space</h1>
+                    <div class="divider"></div>
+                    <div class="row" style="margin-top: 11.5px">
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('home', 'about')">about.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('home', 'projects')">projects.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('home', 'blog')">blog.</h6>
+                        </div>
                     </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('home', 'projects')">projects.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('home', 'blog')">blog.</h6>
-                    </div>
+                    <div class="divider"></div>
                 </div>
-                <div class="divider"></div>
             </div>
-        </div>
+    
+            <!-- Projects Container -->
+            <div id="projects" class="container">
+                <div class="row">
+                    <h1 class="center-align">projects.</h1>
+                    <div class="divider"></div>
+                    <div class="row" style="margin-top: 11.5px">
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('projects', 'about')">about.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('projects', 'home')">home.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('projects', 'blog')">blog.</h6>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+    
+            <!-- About Container -->
+            <div id="about" class="container">
+                <div class="row">
+                    <h1 class="center-align">about.</h1>
+                    <div class="divider"></div>
+                    <div class="row" style="margin-top: 11.5px">
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('about', 'projects')">projects.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('about', 'home')">home.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('about', 'blog')">blog.</h6>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+    
+            <!-- Blog Container -->
+            <div id="blog" class="container">
+                <div class="row">
+                    <h1 class="center-align">blog.</h1>
+                    <div class="divider"></div>
+                    <div class="row" style="margin-top: 11.5px">
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('blog', 'projects')">projects.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('blog', 'home')">home.</h6>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="center-align" onClick="fadeInAndOut('blog', 'about')">about.</h6>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </div>     
 
-        <!-- Projects Container -->
-        <div id="projects" class="container">
-            <div class="row">
-                <h1 class="center-align">projects.</h1>
-                <div class="divider"></div>
-                <div class="row" style="margin-top: 11.5px">
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('projects', 'about')">about.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('projects', 'home')">home.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('projects', 'blog')">blog.</h6>
-                    </div>
-                </div>
-                <div class="divider"></div>
-            </div>
-        </div>
-
-        <!-- About Container -->
-        <div id="about" class="container">
-            <div class="row">
-                <h1 class="center-align">about.</h1>
-                <div class="divider"></div>
-                <div class="row" style="margin-top: 11.5px">
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('about', 'projects')">projects.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('about', 'home')">home.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('about', 'blog')">blog.</h6>
-                    </div>
-                </div>
-                <div class="divider"></div>
-            </div>
-        </div>
-
-        <!-- Blog Container -->
-        <div id="blog" class="container">
-            <div class="row">
-                <h1 class="center-align">blog.</h1>
-                <div class="divider"></div>
-                <div class="row" style="margin-top: 11.5px">
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('blog', 'projects')">projects.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('blog', 'home')">home.</h6>
-                    </div>
-                    <div class="col s4">
-                        <h6 class="center-align" onClick="fadeInAndOut('blog', 'about')">about.</h6>
-                    </div>
-                </div>
-                <div class="divider"></div>
-            </div>
+            <!-- <canvas id="blackhole" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas> -->
         </div>
     </body>
 </html>
